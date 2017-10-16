@@ -1,0 +1,10 @@
+C:\pj\Ejercicios-C-Sharp\obj\Debug\netcoreapp2.0\Ejercicios-C-Sharp.csproj.CoreCompileInputs.cache
+C:\pj\Ejercicios-C-Sharp\obj\Debug\netcoreapp2.0\Ejercicios-C-Sharp.AssemblyInfoInputs.cache
+C:\pj\Ejercicios-C-Sharp\obj\Debug\netcoreapp2.0\Ejercicios-C-Sharp.AssemblyInfo.cs
+C:\pj\Ejercicios-C-Sharp\bin\Debug\netcoreapp2.0\Ejercicios-C-Sharp.deps.json
+C:\pj\Ejercicios-C-Sharp\bin\Debug\netcoreapp2.0\Ejercicios-C-Sharp.runtimeconfig.json
+C:\pj\Ejercicios-C-Sharp\bin\Debug\netcoreapp2.0\Ejercicios-C-Sharp.runtimeconfig.dev.json
+C:\pj\Ejercicios-C-Sharp\bin\Debug\netcoreapp2.0\Ejercicios-C-Sharp.dll
+C:\pj\Ejercicios-C-Sharp\bin\Debug\netcoreapp2.0\Ejercicios-C-Sharp.pdb
+C:\pj\Ejercicios-C-Sharp\obj\Debug\netcoreapp2.0\Ejercicios-C-Sharp.dll
+C:\pj\Ejercicios-C-Sharp\obj\Debug\netcoreapp2.0\Ejercicios-C-Sharp.pdb
