@@ -7,62 +7,67 @@ izquierda del mismo, que ya se encuentra ordenada.Este proceso se repite desde e
 hasta el n-esimo elemento. 
 */
 
-/*
-Ejemplo:
 
-Se desean ordenarse las siguientes clave del arreglo A: 15, 67, 08, 16, 44, 27, 12, 35
-
-Primera pasada
-A[2] < A[1] 67 < 15 No hay intercambio
-
-A: 15, 67, 08, 16, 44, 27, 12, 35
-
-Segunda pasada
-A[3] < A[2] 08 < 67 Si hay intercambio
-A[2] < A[1] 08 < 15 Si hay
-
-A: 15, 08, 67, 16, 44, 27, 12, 35
-
-Tercera pasada 
-A[4] < A[3] 08 < 15 Si hay intercambio
-A[3] < A[2] 08 < 15 Si hay intercambio
-
-A= 08, 15, 67, 16, 44, 27, 12, 35
-
-Hasta la séptima pasada el arreglo queda ordenado:   08, 12, 15, 16, 27, 35, 44, 67
-*/
 using System;
-
-public class SeleccionDirecta
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace PruebaVector
 {
-    public static void Main()
+    class PruebaVector
     {
-        int[] numeros = { 2, 5, 1, 6, 4, 3 };
-        int i, j, min, auxiliar;
+        private int[] vector;
 
-        // Para todos los datos del array
-        for (i = 0; i < numeros.Length - 1; i++)
+        public void Cargar()
         {
-            // Busco el menor en cada pasada
-            min = i;
-            for (j = i + 1; j < numeros.Length; j++)
+            Console.WriteLine("Metodo de insercion directa");
+            Console.Write("Cuantos longitud del vector:");
+            string linea;
+            linea = Console.ReadLine();
+            int cant;
+            cant = int.Parse(linea);
+            vector = new int[cant];
+            for (int f = 0; f < vector.Length; f++)
             {
-                if (numeros[j] < numeros[min])
-                    min = j;
+                Console.Write("Ingrese elemento " + (f + 1) + ": ");
+                linea = Console.ReadLine();
+                vector[f] = int.Parse(linea);
             }
+        }
 
-            // Si el menor estaba descolocado, lo coloco
-            if (min != i)
+        public void InsercionDirecta()
+        {
+            int auxili;
+            int j;
+            for (int i = 0; i < vector.Length; i++)
             {
-                auxiliar = numeros[i];
-                numeros[i] = numeros[min];
-                numeros[min] = auxiliar;
+                auxili = vector[i];
+                j = i - 1;
+                while (j >= 0 && vector[j] > auxili)
+                {
+                    vector[j + 1] = vector[j];
+                    j--;
+                }
+                vector[j + 1] = auxili;
             }
+        }
 
-            // Y muestro el progreso
-            foreach (int dato in numeros)
-                Console.Write(dato + " ");
-            Console.WriteLine();
+        public void Imprimir()
+        {
+            Console.WriteLine("Vector ordenados en forma ascendente");
+            for (int f = 0; f < vector.Length; f++)
+            {
+                Console.Write(vector[f] + "  ");
+            }
+            Console.ReadKey();
+        }
+
+        static void Main(string[] args)
+        {
+            PruebaVector pv = new PruebaVector();
+            pv.Cargar();
+            pv.InsercionDirecta();
+            pv.Imprimir();
         }
     }
 }
