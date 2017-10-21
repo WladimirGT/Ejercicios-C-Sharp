@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,9 @@ namespace hola
             int[,] matrizB;
             int[,] matrizR;
 
-            matrizA = new int[10, 10];
-            matrizB = new int[10, 10];
-            matrizR = new int[10, 10];
+            matrizA = new int[3, 3];
+            matrizB = new int[3, 3];
+            matrizR = new int[3, 3];
 
 
             Console.WriteLine("Numeros matrizA");
@@ -63,3 +64,4 @@ namespace hola
         }
     }
 }
+*/
