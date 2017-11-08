@@ -15,33 +15,34 @@ namespace hola
 {
     class Program
     {
-        static void 
+        static void
         Main(string[] args)
         {
-          try {
+            try
+            {
 
-//Pass the filepath and filename to the StreamWriter Constructor
-StreamWriter sw = new StreamWriter("D:\\Test.txt");
+                //Pass the filepath and filename to the StreamWriter Constructor
+                StreamWriter sw = new StreamWriter("D:\\Test.txt");
 
-//Write a line of text
-sw.WriteLine("Hello World!!");
+                //Write a line of text
+                sw.WriteLine("Hello World!!");
 
-//Write a second line of text
-sw.WriteLine("From the StreamWriter class");
+                //Write a second line of text
+                sw.WriteLine("From the StreamWriter class");
 
-sw.WriteLine("Hola mundo...");
+                sw.WriteLine("Hola mundo...");
 
-//Close the file
-sw.Close();
-}
-catch(Exception e)
-{
-Console.WriteLine("Exception: " + e.Message);
-}
-finally 
-{
-Console.WriteLine("Executing finally block.");
-}
+                //Close the file
+                sw.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
         }
     }
 }
